@@ -5,7 +5,6 @@ import DeleteIconOutlinedIcon from "@mui/icons-material/DeleteOutline";
 
 const Archive = () => {
   const { archivedNotes, notesDispatch } = useNotes();
-  console.log("archived ntoes", archivedNotes);
   const removeFromArchive = (id) => {
     notesDispatch({
       type: "UN_ARCHIVE",
@@ -18,7 +17,6 @@ const Archive = () => {
       payload: { id },
     });
   };
-  console.log("archived notes", archivedNotes);
   return (
     <>
       {archivedNotes?.length > 0 ? (

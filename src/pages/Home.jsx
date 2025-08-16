@@ -24,10 +24,8 @@ const Home = () => {
       type: "CLEAR_INPUT",
     });
   }
-  console.log("all notes", notes);
   const pinnedNotes =
     notes?.length > 0 && notes.filter(({ isPinned }) => isPinned);
-  console.log("real pinned notes", pinnedNotes);
 
   const otherNotes =
     notes?.length > 0 && notes.filter(({ isPinned }) => !isPinned);

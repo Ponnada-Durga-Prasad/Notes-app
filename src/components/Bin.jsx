@@ -15,7 +15,6 @@ const Bin = () => {
       payload: { id },
     });
   };
-  console.log(bin);
   return (
     <>
       {bin?.length > 0 ? (
